@@ -1,0 +1,94 @@
+*,
+::before,::after
+	{
+		/*选择所有标签*/
+		margin:0;
+		padding:0;
+		/*清楚移动端默认的 点击高亮效果*/
+		-webkit-tap-highlight-color:transparent;
+		/*设置所有的都是以边框开始计算宽度 百分比*/
+		-webkit-box-sizing:border-box;/*兼容*/
+		box-sizing:border-box;
+			
+	}
+
+body{
+	font-size:14px;
+	font-family:"MicroSoft YaHei",sans-serif;/*设备默认字体*/
+}
+a{
+	color:#333;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration:none;
+}
+input{
+	border:none;
+	outline:none;
+	/*清除移动端默认的表单样式*/
+	-webkit-appearance:none;
+}
+/*--------------------------------------以上css reset(重置)样式--------------------------------------*/
+
+
+
+/*--------------------------------------以下css common(公用)样式-------------------------------------*/
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+.f_left{
+	float: left;
+}
+.f_right{
+	float: right;
+}
+
+.clearfix::before,
+.clearfix::after{
+	content:"";
+	height:0;
+	line-height:0;
+	display:block;
+	visibility:hidden;
+	clear:both;
+}
+[class^="icon_"]{
+		 background: url("../img/iconmap_topheader.png") no-repeat;
+	background-size: 136px 67px;
+}
+.injd{
+	width: 3em;
+	height: 2em;
+	color: #fff;
+}
+ul,li{
+	list-style: none;
+}
+.m_l10{
+	margin-left: 10px;
+}
+.m_r10{
+	margin-right: 10px;
+}
+.m_b10{
+	margin-bottom: 10px;
+}
+.m_t10{
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
